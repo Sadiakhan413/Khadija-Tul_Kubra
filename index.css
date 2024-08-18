@@ -1,0 +1,27 @@
+
+#indexnav
+{
+    font-size: 150%;
+   position: sticky;
+    padding-bottom: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.nav-item a:hover{
+    color: crimson;
+    font-style: italic;
+}
+.navbar-brand img:hover{
+ 
+}
+#indexnav:hover{
+}
+#navbarSupportedContent{
+    padding-left: 5%;
+}
+#navbarSupportedContent li:hover{
+
+}
+
