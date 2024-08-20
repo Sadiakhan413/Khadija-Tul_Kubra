@@ -2,13 +2,27 @@
 #indexnav
 {
     font-size: 150%;
-   position: sticky;
     padding-bottom: -5%;
     display: flex;
     justify-content: space-evenly;
     padding-left: 2%;
     padding-right: 2%;
+    height:fit-content;
+    background-color: red;
+
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    /* Fix the navbar at the top */
+    width: 100%;
+    z-index: 1; /* Ensure navbar is above the video */
+    color: white;
+}
+
 .nav-item a:hover{
     color: crimson;
     font-style: italic;
@@ -20,8 +34,180 @@
 }
 #navbarSupportedContent{
     padding-left: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
-#navbarSupportedContent li:hover{
+
+#bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.video-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure video is behind other elements */
+    overflow: hidden;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+
+    /* text-align: center; */
+    position: relative;
+    z-index: 1; /* Ensure hero content is above the video */
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    opacity: 100%;
+    z-index: 1;
+    color: crimson;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: crimson;
+}
+#about-vid video{
+   border-radius: 10%;
+   width: 500px;
+   height: 500px;
+     
+}
+
+#about-us h1{
+font-size: x-large;
+color: rgb(41, 41, 77);
+text-decoration: solid;
+
+text-align: center;
+padding-top: 20%;
+}
+#about-us p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+.row{
+   padding: 5%;
+}
+#learn{
+    text-align: center;
+    justify-content: center;
+    color:white ;
+    background-color: blue;
+    margin-left: 41%;
+}
+.box h3{
+    color:crimson;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.box{
+    flex-basis:30%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: center;
+    border: 1px solid #ddd;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+.box:hover
+{
+    background-color: #063d41;
+    color: white;
+} 
+.box img{
+    padding: 10%;
+    width:100%;
+    opacity: 0.8;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px); /* Adjust float height */
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+.news{
+
+    text-align: center;
+    justify-content: center;
+}
+.event-group{
+    display: flex;
+
+    padding-left: 12%;
+}
+.event img {
+        border-radius: 10%;
+        height: 300px;
+    }
+
+#news-events
+{
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: x-large;
+}
+ .event{
+    border-radius: 10%;
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    background-color: #e5edf3;
+    margin: 10px;
+    border: 1px solid #436E92;
+}
+.event-img-top{
+    width: 3px;
+    height: 350px;
+   
 
 }
+.event-body{
+    padding-top: 10%;
+}
+ .event-title{
+    background-color: #063d41;
+    color: white;
+    text-align: center;
+}
+.event-body button{
+    border-radius: 20%;
+    background-color: yellow;
+}
+.event-body button:hover{
+    border-radius: 20%;
+    background-color:#5fb348;
+    width: 100px;
+    color: white;
+    height: 50px;
 
+}
