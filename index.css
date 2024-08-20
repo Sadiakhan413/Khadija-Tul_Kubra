@@ -122,7 +122,7 @@ padding-top: 20%;
 .box{
     flex-basis:30%;
     margin: 20px;
-    background-color: #fff;
+    background-color: #cccbbb;
     padding: 20px;
     justify-content: center;
     border: 1px solid #ddd;
@@ -131,7 +131,7 @@ padding-top: 20%;
     justify-content: center;
     position: relative;
     border-radius: 10px;
-    animation: float 3s ease-in-out infinite;
+    animation:  float linear 3s infinite;
 }
 .box:hover
 {
@@ -151,7 +151,7 @@ padding-top: 20%;
         transform: translateY(-100px); /* Adjust float height */
     }
     100% {
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
 }
 .news{
@@ -161,13 +161,12 @@ padding-top: 20%;
 }
 .event-group{
     display: flex;
-
     padding-left: 12%;
 }
 .event img {
         border-radius: 10%;
         height: 300px;
-    }
+}
 
 #news-events
 {
@@ -184,7 +183,19 @@ padding-top: 20%;
     background-color: #e5edf3;
     margin: 10px;
     border: 1px solid #436E92;
+    /* animation: move linear 3s infinite; */
 }
+/* @keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px); 
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+} */
 .event-img-top{
     width: 3px;
     height: 350px;
@@ -217,21 +228,40 @@ padding-top: 20%;
 
 }
 .contact{
+    background-color: rgb(187, 187, 232);
     padding-top: -10%;
     justify-content: center;
     text-align: center;
     padding-bottom: -10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 10%;
 }
+#con1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
 #con2{
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 #con3{
-    padding-top: 10%;
+    /* padding-top: 10%; */
+    padding-bottom: 5%;
 }
 #con3 img{
     width: 80px;
     height: 80px;
 }
 .footer{
+    
     margin-top: -10%;
+}
+#foot a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    margin-left: 20%;
+   
 }
