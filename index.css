@@ -203,6 +203,11 @@ padding-top: 20%;
     border-radius: 20%;
     background-color: yellow;
 }
+.event:hover{
+   height: 600px;
+   width: 500px;
+   
+}
 .event-body button:hover{
     border-radius: 20%;
     background-color:#5fb348;
@@ -210,4 +215,23 @@ padding-top: 20%;
     color: white;
     height: 50px;
 
+}
+.contact{
+    padding-top: -10%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: -10%;
+}
+#con2{
+    padding-top: 10%;
+}
+#con3{
+    padding-top: 10%;
+}
+#con3 img{
+    width: 80px;
+    height: 80px;
+}
+.footer{
+    margin-top: -10%;
 }
