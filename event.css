@@ -39,7 +39,7 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: 20% 20% 20%  20% ;
+    grid-template-columns: 20% 20% 20% 20%;
     justify-content: space-evenly;
 }
 .gallery div {
@@ -87,10 +87,9 @@ cursor: pointer;
         height: 100%;
     }
     .gallery div img{
+        height: 200px;
+        width: 200px;
        
-      
-       height: 90%;
-       width: 90%;
     }
     .gallery span p{
     
@@ -98,13 +97,22 @@ cursor: pointer;
             font-size: medium;
      }
 }
-
- @media(max-width:400px){
+@media(max-width:800px){
 
     .gallery{
         padding-top: 5%;
         display: grid;
         grid-template-columns: 50% 50% ;
+        justify-content: space-around;
+    
+    }
+}
+ @media(max-width:400px){
+
+    .gallery{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 100%;
         justify-content: space-around;
     
     }
