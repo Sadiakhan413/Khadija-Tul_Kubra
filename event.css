@@ -1,0 +1,111 @@
+.box-text {
+    background-color: #f9f9f9; /* Light background color */
+    border: 2px solid #333; /* Dark border for the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    max-width: 600px; /* Set a maximum width */
+    margin: 20px auto; /* Center the box horizontally */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.box-text:hover{
+    background-color: #97c6ca;
+}
+.box-text h3 {
+    color: #063d41; /* Custom color for the title */
+    margin-bottom: 10px;
+}
+
+.box-text p {
+    color: #333; /* Dark color for the text */
+    font-size: 1.1em; /* Slightly larger text */
+    line-height: 1.6; /* Space between lines */
+    margin-bottom: 20px;
+}
+
+.box-text button {
+    background-color: #35b367; /* Green background for the button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.box-text button:hover {
+    background-color: #2a954d; /* Darker green on hover */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 20% 20% 20%  20% ;
+    justify-content: space-evenly;
+}
+.gallery div {
+    display: grid;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.gallery div img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+     margin: 10px;
+     background-color: transparent;
+     box-shadow:100%;
+ }
+ .gallery div img:hover{
+border-radius: 50%;
+cursor: pointer;
+ }
+
+ @media(max-width:1000px){
+   
+    .gallery{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 30% 30% 30% ;
+        grid-row-gap: 5cap;
+        justify-content: space-around;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        
+    
+    }
+    .gallery div{
+        
+        border: 1px solid #fafafa;
+        text-align: center;
+        margin: 10px 0;
+        height: 100%;
+    }
+    .gallery div img{
+       
+      
+       height: 90%;
+       width: 90%;
+    }
+    .gallery span p{
+    
+            padding: 3px;
+            font-size: medium;
+     }
+}
+
+ @media(max-width:400px){
+
+    .gallery{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        justify-content: space-around;
+    
+    }
+}
