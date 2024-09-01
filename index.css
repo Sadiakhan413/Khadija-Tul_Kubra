@@ -144,7 +144,6 @@ padding-top: 20%;
     margin: 20px auto; /* Center the box horizontally */
     text-align: center; /* Center the text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
-
 }
 .box-text div img {
     height: 500px;
